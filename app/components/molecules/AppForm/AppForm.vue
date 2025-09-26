@@ -61,9 +61,10 @@
 import { ref, watch } from "vue";
 import { Form, Field, ErrorMessage } from "vee-validate";
 import * as yup from "yup";
-import AppButton from "../../../App/components/atoms/AppButton/AppButton.vue";
+
 import SuccessfulModal from "../../organisms/SuccessfulModal/SuccessfulModal.vue";
 import UnsuccessfulModal from "../../organisms/UnsuccessfulModal/UnsuccessfulModal.vue";
+import AppButton from "../../atoms/AppButton/AppButton.vue";
 
 const { t } = useI18n();
 
