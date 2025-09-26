@@ -52,7 +52,7 @@ export default defineNuxtConfig ({
         }
       ],
     },
-    // baseURL: '/flower-shop/',
+     baseURL: '/flower-shop/',
   },
   image: {
     provider: 'ipx',
