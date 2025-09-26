@@ -45,8 +45,8 @@ const handleReset = () => {
 };
 </script>
 
-<style>
-@import "CaseCards.scss";
+<style lang="scss">
+@use "CaseCards.scss" as *;
 
 .case-cards {
   position: relative;
