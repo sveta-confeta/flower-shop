@@ -17,6 +17,11 @@ export default defineNuxtConfig ({
     compressPublicAssets: true,
     preset: 'github-pages'
   },
+  postcss: {
+    plugins: {
+      autoprefixer: {},
+    },
+  },
   app: {
     head: {
       title: 'Flower Business',

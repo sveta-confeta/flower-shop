@@ -4,9 +4,6 @@ import { defineNuxtConfig } from 'nuxt/config';
 
 export default defineNuxtConfig ({
 
-  routeRules: {
-    '/case/**': { ssr: true }
-  },
   modules: [
     // '@nuxtjs/color-mode',
     '@nuxt/image',
