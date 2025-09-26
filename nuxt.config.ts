@@ -54,6 +54,11 @@ export default defineNuxtConfig ({
     },
     baseURL: '/flower-shop/',
   },
+  image: {
+    provider: 'ipx',
+    dir: 'public',
+    format: ['webp', 'jpg'],
+  },
   i18n: {
     strategy: 'no_prefix',
     defaultLocale: "ru",
