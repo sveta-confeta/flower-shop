@@ -67,5 +67,5 @@ watch(() => props.show, (val) => {
 </script>
 
 <style scoped lang="scss">
-@import "AppModal.scss";
+@use "AppModal.scss"  as *;
 </style>

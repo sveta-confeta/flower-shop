@@ -89,5 +89,5 @@ const handlerClick = (event) => {
 </script>
 
 <style lang="scss">
-@use 'AppButton.scss' as *;
+@import 'AppButton';
 </style>

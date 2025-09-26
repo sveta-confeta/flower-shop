@@ -14,6 +14,15 @@ export default defineNuxtConfig ({
     compressPublicAssets: true,
     preset: 'github-pages'
   },
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: '@use "~/assets/scss/index.scss" as *;'
+        }
+      }
+    },
+  },
   postcss: {
     plugins: {
       autoprefixer: {},

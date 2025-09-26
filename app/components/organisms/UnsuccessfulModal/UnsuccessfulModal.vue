@@ -33,5 +33,5 @@ const { t } = useI18n();
 </script>
 
 <style scoped lang="scss">
-@import "UnsuccessfulModal";
+@use "UnsuccessfulModal.scss"  as *;
 </style>

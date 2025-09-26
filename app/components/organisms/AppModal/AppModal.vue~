@@ -31,7 +31,8 @@
 </template>
 
 <script setup>
-import AppForm from "~/components/molecules/AppForm/AppForm.vue";
+
+import AppForm from "../../molecules/AppForm/AppForm.vue";
 
 const {t} = useI18n();
 

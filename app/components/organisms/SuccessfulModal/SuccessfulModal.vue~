@@ -28,5 +28,5 @@ const props = defineProps({
 </script>
 
 <style scoped lang="scss">
-@use "SuccessfulModal.scss" as *;
+@use "SuccessfulModal.scss";
 </style>

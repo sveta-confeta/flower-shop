@@ -135,5 +135,5 @@ const changeLocale = async (lng) => {
 </script>
 
 <style scoped lang="scss">
-@import 'Header.scss';
+@use 'Header.scss' as *;
 </style>

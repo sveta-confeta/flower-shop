@@ -26,7 +26,7 @@ const getImageUrl = (src: string) => {
   return runtimeConfig.app.baseURL + src
 }
 
-const formatDate = (dateString) => {
+const formatDate = (dateString:string) => {
   return new Date(dateString).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })
 }
 </script>
