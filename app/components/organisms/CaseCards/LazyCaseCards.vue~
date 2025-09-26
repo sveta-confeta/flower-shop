@@ -28,6 +28,7 @@
 </template>
 
 <script setup lang="ts">
+import { useCaseCardsStore } from "~/stores/caseCards";
 import { useI18n } from "vue-i18n";
 import AppTitle from "../../molecules/AppTitle/AppTitle.vue";
 import CaseCard from "../../molecules/CaseCard/CaseCard.vue";

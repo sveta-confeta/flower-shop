@@ -28,7 +28,7 @@
 </template>
 
 <script setup lang="ts">
-import { useCaseCardsStore } from "~/stores/caseCards";
+import { useCaseCardsStore } from "../../../stores/caseCards";
 import { useI18n } from "vue-i18n";
 import AppTitle from "../../molecules/AppTitle/AppTitle.vue";
 import CaseCard from "../../molecules/CaseCard/CaseCard.vue";
@@ -50,7 +50,6 @@ const handleReset = () => {
 
 .case-cards {
   position: relative;
-
   &__list {
     overflow: hidden;
     transition: all 0.4s ease;
