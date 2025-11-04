@@ -40,7 +40,6 @@ export default defineNuxtConfig({
         // '@nuxt/image',
         '@pinia/nuxt',
         '@nuxtjs/i18n',
-        'swiper/nuxt',
     ],
     i18n: {
         strategy: 'no_prefix',

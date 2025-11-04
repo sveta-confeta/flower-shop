@@ -37,9 +37,10 @@ export default defineNuxtConfig({
     devtools: {enabled: true},
     modules: [
         // '@nuxtjs/color-mode',
-        '@nuxt/image',
+        // '@nuxt/image',
         '@pinia/nuxt',
-        '@nuxtjs/i18n'
+        '@nuxtjs/i18n',
+        'swiper/nuxt',
     ],
     i18n: {
         strategy: 'no_prefix',
