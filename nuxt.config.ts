@@ -54,6 +54,7 @@ export default defineNuxtConfig({
 
     // Добавьте это
     nitro: {
+        compressPublicAssets: true,
         preset: 'github-pages'
     }
 })
