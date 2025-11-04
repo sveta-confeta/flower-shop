@@ -3,10 +3,9 @@
     <time class="promo-news__time" datetime="2024-02-03">03.02.2024</time>
     <h1 class="promo-news__title" >{{ newsData?.title}}</h1>
     <span class="promo-news__text">#FlawersShop #FlawerBusiness</span>
-    <nuxt-picture
+    <img
                   :src="newsData?.src"
                   :alt="newsData?.alt"
-                  formats="webp"
                   class="news-picture"
     />
   </div>

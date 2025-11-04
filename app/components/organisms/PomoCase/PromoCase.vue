@@ -1,8 +1,7 @@
 <template>
   <div class="promo-case">
-    <nuxt-picture :src="getImageUrl(caseData.src)"
+    <img :src="getImageUrl(caseData.src)"
                   :alt="caseData.alt"
-                  formats="webp"
                   class="promo-case-picture"
     />
     <div class="promo-case__add">

@@ -5,8 +5,9 @@
       <li v-for="card in newsData" :key="card.id" class="news-card__item">
         <NuxtLink :to="'/news/' + card.id" class="news-card__link">
           <div class="news-card__item-img">
-            <img :src="card.src"
+            <nuxt-picture :src="card.src"
                           :alt="card.alt"
+                          formats="webp"
                           class="news-picture"
             />
           </div>
