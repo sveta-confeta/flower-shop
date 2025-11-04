@@ -1,0 +1,10 @@
+@use 'colors';
+@use 'breakpoints';
+@use "scale";
+@use "fonts";
+@use 'common';
+
+
+* {
+  background: red;
+}
