@@ -1,8 +1,7 @@
 <template>
   <div class="stats-item">
-    <nuxt-picture :src="img"
+    <img :src="img"
                   :alt="value"
-                  formats="webp"
                   class="stats-img"
     />
     <div class="gradient-overlay"></div>
