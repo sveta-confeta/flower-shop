@@ -51,9 +51,4 @@ export default defineNuxtConfig({
             {code: "en", name: "En", file: "en.json"},
         ],
     },
-
-    // Добавьте это
-    nitro: {
-        compressPublicAssets: true,
-    }
 })
