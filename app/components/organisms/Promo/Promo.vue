@@ -1,20 +1,15 @@
 <template>
   <div class="promo">
     <img
-         src="./images/promo-bg.webp"
+         src="/images/promo-bg.webp"
          alt="background image"
          class="promo-picture"
     >
-    <NuxtImg src="/images/promo-bg.webp"
-                  alt="background image"
-                  formats="webp"
-                  class="promo-picture"
-    />
     <div class="promo__context container">
       <h2 class="promo__context-text">{{ t('promo.experts', 'Professional experts') }}</h2>
       <div class="promo__context-title-wrap">
         <h1 class="promo__context-title">{{t('promo.title', 'Advantages of the Flower business')}}</h1>
-        <img class="promo__context-underline-mob" src="./images/icons/underlining/main-underlining-mob.svg"
+        <img class="promo__context-underline-mob" src="/images/icons/underlining/main-underlining-mob.svg"
              alt="underline">
       </div>
       <app-button

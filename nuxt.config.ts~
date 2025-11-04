@@ -36,8 +36,8 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
     // '@nuxtjs/color-mode',
-    // '@nuxt/image',
-    // '@pinia/nuxt',
+     '@nuxt/image',
+     '@pinia/nuxt',
     '@nuxtjs/i18n'
   ],
   i18n: {
