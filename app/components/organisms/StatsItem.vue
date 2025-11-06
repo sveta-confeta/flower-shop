@@ -1,6 +1,6 @@
 <template>
   <div class="stats-item">
-    <img :src="img"
+    <img :src="`${baseURL}${img}`"
                   :alt="value"
                   class="stats-img"
     />
@@ -12,6 +12,9 @@
 </template>
 
 <script setup>
+const runtimeConfig = useRuntimeConfig()
+const baseURL = runtimeConfig.app.baseURL;
+
 const props = defineProps({
   value: {
     type: String,

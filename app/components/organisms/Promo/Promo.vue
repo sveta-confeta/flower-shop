@@ -1,7 +1,7 @@
 <template>
   <div class="promo">
     <img
-         src="/images/promo-bg.webp"
+         :src="`${baseURL}images/promo-bg.webp`"
          alt="background image"
          class="promo-picture"
     >
@@ -22,6 +22,8 @@
 </template>
 
 <script setup>
+const runtimeConfig = useRuntimeConfig()
+const baseURL = runtimeConfig.app.baseURL
 
 import {ref} from "vue";
 import AppModal from "../AppModal/AppModal.vue";
