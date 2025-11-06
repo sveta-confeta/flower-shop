@@ -1,7 +1,7 @@
 <template>
   <div class="case-card" :class="cardClass" v-for="card in cards" :key="card.id">
     <NuxtLink :to="'/case/' + card.id" class="case-card__link">
-      <img :src="getImageUrl(card.src)"
+      <img :src="`${baseURL}${card.src}`"
                     :alt="card.alt"
                     class="case-picture"
       />
@@ -13,10 +13,7 @@
 </template>
 <script setup>
 const runtimeConfig = useRuntimeConfig()
-
-const getImageUrl = (src) => {
-  return runtimeConfig.app.baseURL + src
-}
+const baseURL = runtimeConfig.app.baseURL;
 
  defineProps({
   cards: {

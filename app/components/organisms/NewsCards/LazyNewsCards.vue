@@ -5,7 +5,7 @@
       <li v-for="card in newsData" :key="card.id" class="news-card__item">
         <NuxtLink :to="'/news/' + card.id" class="news-card__link">
           <div class="news-card__item-img">
-            <img :src="card.src"
+            <img :src="`${baseURL}${card.src}`"
                           :alt="card.alt"
                           class="news-picture"
             />
@@ -24,6 +24,9 @@
 import { computed } from "vue";
 import { useNewsCardsStore } from "~/stores/newsCards";
 import AppTitle from "../../molecules/AppTitle/AppTitle.vue";
+
+const runtimeConfig = useRuntimeConfig()
+const baseURL = runtimeConfig.app.baseURL;
 
 const store = useNewsCardsStore();
 const { t } = useI18n();

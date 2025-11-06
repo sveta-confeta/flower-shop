@@ -4,14 +4,18 @@
     <h1 class="promo-news__title" >{{ newsData?.title}}</h1>
     <span class="promo-news__text">#FlawersShop #FlawerBusiness</span>
     <img
-                  :src="newsData?.src"
+                :src="getImageUrl(newsData?.src)"
                   :alt="newsData?.alt"
                   class="news-picture"
     />
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
+const runtimeConfig = useRuntimeConfig()
+const getImageUrl = (src: string) => {
+  return runtimeConfig.app.baseURL + src
+}
 
 const props = defineProps({
   newsData: {
