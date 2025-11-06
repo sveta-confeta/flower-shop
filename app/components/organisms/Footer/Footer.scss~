@@ -17,9 +17,10 @@
     grid-template-areas:
    "content  form"
    "contact  form";
-    grid-template-columns: 7fr 5fr;
+    grid-template-columns: 1fr 1fr;
     margin-bottom: 96px;
     @media (max-width: $laptop) {
+      grid-template-columns: 7fr 5fr;
       column-gap: 30px;
     }
     @media(max-width: 1100px) {

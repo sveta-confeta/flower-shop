@@ -113,7 +113,7 @@
         font-size: size-decstop(40);
         line-height: size-decstop(50);
         margin-bottom: size-decstop(24);
-        width: size-decstop(500);
+        width: size-decstop(24);
       }
     }
     &-text {
